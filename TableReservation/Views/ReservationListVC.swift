@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ReservationListVC.swift
 //  TableReservation
 //
 //  Created by Prabhjot Singh Gogana on 30/8/2022.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ReservationListVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

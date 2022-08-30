@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		EE7DF2F928BE36E600A524BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7DF2F828BE36E600A524BD /* AppDelegate.swift */; };
 		EE7DF2FB28BE36E600A524BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7DF2FA28BE36E600A524BD /* SceneDelegate.swift */; };
-		EE7DF2FD28BE36E600A524BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7DF2FC28BE36E600A524BD /* ViewController.swift */; };
+		EE7DF2FD28BE36E600A524BD /* ReservationListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7DF2FC28BE36E600A524BD /* ReservationListVC.swift */; };
 		EE7DF30028BE36E600A524BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7DF2FE28BE36E600A524BD /* Main.storyboard */; };
 		EE7DF30228BE36E900A524BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE7DF30128BE36E900A524BD /* Assets.xcassets */; };
 		EE7DF30528BE36E900A524BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7DF30328BE36E900A524BD /* LaunchScreen.storyboard */; };
 		EE7DF31028BE36E900A524BD /* TableReservationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7DF30F28BE36E900A524BD /* TableReservationTests.swift */; };
 		EE7DF31A28BE36E900A524BD /* TableReservationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7DF31928BE36E900A524BD /* TableReservationUITests.swift */; };
 		EE7DF31C28BE36E900A524BD /* TableReservationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7DF31B28BE36E900A524BD /* TableReservationUITestsLaunchTests.swift */; };
+		EE7DF33328BE4DFD00A524BD /* SelectTimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7DF33228BE4DFD00A524BD /* SelectTimeVC.swift */; };
+		EE7DF33528BE4E2000A524BD /* SelectPartySizeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7DF33428BE4E2000A524BD /* SelectPartySizeVC.swift */; };
+		EE7DF33728BE4E3900A524BD /* GuestDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7DF33628BE4E3900A524BD /* GuestDetailsVC.swift */; };
+		EE7DF33928BE4E5400A524BD /* ReservationDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7DF33828BE4E5400A524BD /* ReservationDetailsVC.swift */; };
+		EE7DF33B28BE4E7B00A524BD /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7DF33A28BE4E7B00A524BD /* Reservation.swift */; };
+		EE7DF33D28BE4E9500A524BD /* ReservationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7DF33C28BE4E9500A524BD /* ReservationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +45,7 @@
 		EE7DF2F528BE36E600A524BD /* TableReservation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableReservation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7DF2F828BE36E600A524BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE7DF2FA28BE36E600A524BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EE7DF2FC28BE36E600A524BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE7DF2FC28BE36E600A524BD /* ReservationListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationListVC.swift; sourceTree = "<group>"; };
 		EE7DF2FF28BE36E600A524BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE7DF30128BE36E900A524BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE7DF30428BE36E900A524BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +55,12 @@
 		EE7DF31528BE36E900A524BD /* TableReservationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableReservationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7DF31928BE36E900A524BD /* TableReservationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableReservationUITests.swift; sourceTree = "<group>"; };
 		EE7DF31B28BE36E900A524BD /* TableReservationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableReservationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EE7DF33228BE4DFD00A524BD /* SelectTimeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTimeVC.swift; sourceTree = "<group>"; };
+		EE7DF33428BE4E2000A524BD /* SelectPartySizeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPartySizeVC.swift; sourceTree = "<group>"; };
+		EE7DF33628BE4E3900A524BD /* GuestDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestDetailsVC.swift; sourceTree = "<group>"; };
+		EE7DF33828BE4E5400A524BD /* ReservationDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationDetailsVC.swift; sourceTree = "<group>"; };
+		EE7DF33A28BE4E7B00A524BD /* Reservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reservation.swift; sourceTree = "<group>"; };
+		EE7DF33C28BE4E9500A524BD /* ReservationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +111,12 @@
 		EE7DF2F728BE36E600A524BD /* TableReservation */ = {
 			isa = PBXGroup;
 			children = (
-				EE7DF2F828BE36E600A524BD /* AppDelegate.swift */,
-				EE7DF2FA28BE36E600A524BD /* SceneDelegate.swift */,
-				EE7DF2FC28BE36E600A524BD /* ViewController.swift */,
-				EE7DF2FE28BE36E600A524BD /* Main.storyboard */,
-				EE7DF30128BE36E900A524BD /* Assets.xcassets */,
-				EE7DF30328BE36E900A524BD /* LaunchScreen.storyboard */,
-				EE7DF30628BE36E900A524BD /* Info.plist */,
+				EE7DF32C28BE4C8A00A524BD /* Views */,
+				EE7DF32B28BE4C8100A524BD /* ViewModels */,
+				EE7DF32A28BE4C7800A524BD /* Models */,
+				EE7DF32F28BE4D5700A524BD /* Helpers */,
+				EE7DF32E28BE4CFE00A524BD /* SupportingFiles */,
+				EE7DF32D28BE4CCC00A524BD /* Resources */,
 			);
 			path = TableReservation;
 			sourceTree = "<group>";
@@ -125,6 +136,77 @@
 				EE7DF31B28BE36E900A524BD /* TableReservationUITestsLaunchTests.swift */,
 			);
 			path = TableReservationUITests;
+			sourceTree = "<group>";
+		};
+		EE7DF32A28BE4C7800A524BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE7DF33A28BE4E7B00A524BD /* Reservation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EE7DF32B28BE4C8100A524BD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EE7DF33C28BE4E9500A524BD /* ReservationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EE7DF32C28BE4C8A00A524BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE7DF2FC28BE36E600A524BD /* ReservationListVC.swift */,
+				EE7DF33228BE4DFD00A524BD /* SelectTimeVC.swift */,
+				EE7DF33428BE4E2000A524BD /* SelectPartySizeVC.swift */,
+				EE7DF33628BE4E3900A524BD /* GuestDetailsVC.swift */,
+				EE7DF33828BE4E5400A524BD /* ReservationDetailsVC.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EE7DF32D28BE4CCC00A524BD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE7DF2FE28BE36E600A524BD /* Main.storyboard */,
+				EE7DF30128BE36E900A524BD /* Assets.xcassets */,
+				EE7DF30328BE36E900A524BD /* LaunchScreen.storyboard */,
+				EE7DF30628BE36E900A524BD /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		EE7DF32E28BE4CFE00A524BD /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				EE7DF2F828BE36E600A524BD /* AppDelegate.swift */,
+				EE7DF2FA28BE36E600A524BD /* SceneDelegate.swift */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		EE7DF32F28BE4D5700A524BD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EE7DF33128BE4D7600A524BD /* Extensions */,
+				EE7DF33028BE4D6200A524BD /* ReusableComponents */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EE7DF33028BE4D6200A524BD /* ReusableComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ReusableComponents;
+			sourceTree = "<group>";
+		};
+		EE7DF33128BE4D7600A524BD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +340,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE7DF2FD28BE36E600A524BD /* ViewController.swift in Sources */,
+				EE7DF33D28BE4E9500A524BD /* ReservationViewModel.swift in Sources */,
+				EE7DF33528BE4E2000A524BD /* SelectPartySizeVC.swift in Sources */,
+				EE7DF2FD28BE36E600A524BD /* ReservationListVC.swift in Sources */,
+				EE7DF33728BE4E3900A524BD /* GuestDetailsVC.swift in Sources */,
+				EE7DF33928BE4E5400A524BD /* ReservationDetailsVC.swift in Sources */,
+				EE7DF33328BE4DFD00A524BD /* SelectTimeVC.swift in Sources */,
 				EE7DF2F928BE36E600A524BD /* AppDelegate.swift in Sources */,
+				EE7DF33B28BE4E7B00A524BD /* Reservation.swift in Sources */,
 				EE7DF2FB28BE36E600A524BD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
