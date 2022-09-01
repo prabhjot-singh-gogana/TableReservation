@@ -8,61 +8,24 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Reservation List-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ReservationListVC" customModule="TableReservation" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="p5I-Aw-KQ0">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="p5I-Aw-KQ0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1X6-k5-1TW"/>
-                            <constraint firstItem="p5I-Aw-KQ0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5yJ-NO-Hco"/>
-                            <constraint firstItem="p5I-Aw-KQ0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HMS-gH-QqK"/>
-                            <constraint firstAttribute="bottom" secondItem="p5I-Aw-KQ0" secondAttribute="bottom" id="cuP-0A-t8R"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Reservation List" id="Efr-Ya-yAE">
-                        <barButtonItem key="rightBarButtonItem" title="Create" id="bSM-Vt-d3S">
-                            <connections>
-                                <segue destination="YYZ-Eg-CRS" kind="show" id="8QO-1t-kbD"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <segue destination="V8o-Cm-zv9" kind="presentation" id="hlO-RM-WdN"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="115.94202898550725" y="100.44642857142857"/>
-        </scene>
         <!--Select Party Size-->
         <scene sceneID="AGo-Wl-oN8">
             <objects>
                 <tableViewController id="YfC-g5-reB" customClass="SelectPartySizeVC" customModule="TableReservation" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="ch0-7l-TI8">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="ch0-7l-TI8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="79" id="1xY-0w-kIM">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="79"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PartySizeCell" rowHeight="80" id="1xY-0w-kIM" customClass="PartySizeCell" customModule="TableReservation" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1xY-0w-kIM" id="jXs-OO-kjI">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="79"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eu-5i-ijJ">
-                                            <rect key="frame" x="201" y="24.5" width="12.5" height="30"/>
+                                            <rect key="frame" x="201" y="25" width="12.5" height="30"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -73,19 +36,21 @@
                                         <constraint firstItem="7eu-5i-ijJ" firstAttribute="centerY" secondItem="jXs-OO-kjI" secondAttribute="centerY" id="mr2-sf-YYo"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lblPartySize" destination="7eu-5i-ijJ" id="tCw-yu-GAs"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
-                        <connections>
-                            <outlet property="dataSource" destination="YfC-g5-reB" id="bc8-wj-wo9"/>
-                            <outlet property="delegate" destination="YfC-g5-reB" id="91b-Dn-aFA"/>
-                        </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Select Party Size" id="L8u-yv-sc1">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward" catalog="system" id="GwP-PZ-Dei"/>
+                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="pfP-38-eay"/>
                     </navigationItem>
                     <connections>
-                        <segue destination="NTe-so-HkV" kind="show" id="MCo-Qt-SOn"/>
+                        <outlet property="btnBack" destination="GwP-PZ-Dei" id="MSK-nP-NJV"/>
+                        <outlet property="btnCancel" destination="pfP-38-eay" id="Tv2-z2-nq2"/>
+                        <segue destination="NTe-so-HkV" kind="show" identifier="toGuestDetailSeagueIdentifier" id="MCo-Qt-SOn"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EpF-cg-Wqj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -96,16 +61,16 @@
         <scene sceneID="2CI-8m-KtX">
             <objects>
                 <tableViewController id="YYZ-Eg-CRS" customClass="SelectTimeVC" customModule="TableReservation" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="VYO-hh-jE1">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="VYO-hh-jE1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="79" id="E2w-VL-IbC">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="79"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TimeCell" rowHeight="80" id="E2w-VL-IbC" customClass="TimeCell" customModule="TableReservation" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="E2w-VL-IbC" id="uuP-mx-vrT">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="79"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5W-Dk-0xP">
@@ -128,24 +93,100 @@
                                         <constraint firstItem="V5W-Dk-0xP" firstAttribute="centerX" secondItem="uuP-mx-vrT" secondAttribute="centerX" id="yfP-uw-bHH"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lblAvailable" destination="0bG-87-nFt" id="pGw-N0-AL3"/>
+                                    <outlet property="lblTIme" destination="V5W-Dk-0xP" id="xNh-fS-z7C"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
-                        <connections>
-                            <outlet property="dataSource" destination="YYZ-Eg-CRS" id="Nna-H3-siL"/>
-                            <outlet property="delegate" destination="YYZ-Eg-CRS" id="aRY-OW-Ns2"/>
-                        </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Select Time" id="EIf-eE-W0s">
                         <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" id="JZr-oW-Dms"/>
+                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="C14-gK-1IZ"/>
                     </navigationItem>
                     <connections>
-                        <segue destination="YfC-g5-reB" kind="show" id="tbR-il-uAb"/>
+                        <outlet property="btnBack" destination="JZr-oW-Dms" id="jPk-Zg-CNf"/>
+                        <outlet property="btnCancel" destination="C14-gK-1IZ" id="b0j-ZN-SHO"/>
+                        <segue destination="YfC-g5-reB" kind="show" identifier="toPartySizeSeagueIdentifier" id="tbR-il-uAb"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e5a-6r-NpV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1058" y="100"/>
+        </scene>
+        <!--Reservations-->
+        <scene sceneID="HJP-xj-Hw3">
+            <objects>
+                <tableViewController id="r9d-Ke-Kw2" customClass="ReservationListVC" customModule="TableReservation" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="imb-gA-bal">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReservationListCell" rowHeight="79" id="qEy-xJ-b2b" customClass="ReservationListCell" customModule="TableReservation" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="79"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qEy-xJ-b2b" id="0ir-YJ-EDt">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="79"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lgz-Pn-xTI">
+                                            <rect key="frame" x="20" y="28" width="30" height="24"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="AGC-21-RkY"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pravi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sej-Ik-qhV">
+                                            <rect key="frame" x="65" y="11" width="51" height="27.5"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3:45 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0eD-By-BFz">
+                                            <rect key="frame" x="65" y="46" width="69" height="22"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="0eD-By-BFz" firstAttribute="top" secondItem="sej-Ik-qhV" secondAttribute="bottom" constant="7.5" id="5pz-nZ-5q1"/>
+                                        <constraint firstItem="sej-Ik-qhV" firstAttribute="top" secondItem="0ir-YJ-EDt" secondAttribute="top" constant="11" id="7xD-Tt-EBd"/>
+                                        <constraint firstAttribute="bottom" secondItem="0eD-By-BFz" secondAttribute="bottom" constant="11" id="81c-c4-lK6"/>
+                                        <constraint firstItem="0eD-By-BFz" firstAttribute="leading" secondItem="Lgz-Pn-xTI" secondAttribute="trailing" constant="15" id="BH9-zS-IZq"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sej-Ik-qhV" secondAttribute="trailing" constant="20" id="Fac-BI-vke"/>
+                                        <constraint firstItem="Lgz-Pn-xTI" firstAttribute="leading" secondItem="0ir-YJ-EDt" secondAttribute="leading" constant="20" id="RE1-Rp-Tqq"/>
+                                        <constraint firstItem="sej-Ik-qhV" firstAttribute="leading" secondItem="Lgz-Pn-xTI" secondAttribute="trailing" constant="15" id="hXJ-NR-hNd"/>
+                                        <constraint firstItem="Lgz-Pn-xTI" firstAttribute="top" secondItem="0ir-YJ-EDt" secondAttribute="top" constant="28" id="qga-bs-yJU"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lblGuestName" destination="sej-Ik-qhV" id="esv-Xx-7Qz"/>
+                                    <outlet property="lblSerialNo" destination="Lgz-Pn-xTI" id="wde-aT-qCG"/>
+                                    <outlet property="lblStartTIme" destination="0eD-By-BFz" id="hAm-b9-U2D"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Reservations" id="mAI-tN-523">
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="xf3-Qr-8eY">
+                            <connections>
+                                <segue destination="YYZ-Eg-CRS" kind="show" id="JsM-1N-CWy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="V8o-Cm-zv9" kind="presentation" identifier="toReservayiontlSeagueIdentifier" id="9Cw-Bk-pmf"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nze-Jn-poj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.98550724637681" y="99.776785714285708"/>
         </scene>
         <!--Reservation DetailsVC-->
         <scene sceneID="5TU-E7-KcW">
@@ -257,6 +298,14 @@
                         <barButtonItem key="leftBarButtonItem" enabled="NO" id="15w-bX-rId"/>
                         <barButtonItem key="rightBarButtonItem" title="Close" id="Bff-N3-uO1"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="btnClose" destination="uZf-GM-LTc" id="Y8n-br-QHd"/>
+                        <outlet property="lblName" destination="bit-tY-1ro" id="KyD-Lb-oxW"/>
+                        <outlet property="lblNotes" destination="J78-et-xFX" id="IEP-YL-Yjm"/>
+                        <outlet property="lblPartySize" destination="pMR-r1-ubC" id="rPT-yx-0U7"/>
+                        <outlet property="lblPhone" destination="pLs-1P-IG1" id="Enr-0G-2Wq"/>
+                        <outlet property="lblTime" destination="yIM-Hg-1k4" id="7iM-yy-ic2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jED-X0-ZcY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -345,10 +394,23 @@
                             <constraint firstItem="pFo-ps-UVD" firstAttribute="leading" secondItem="Xxl-xb-zNn" secondAttribute="leading" constant="20" id="wzK-zb-rg3"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" title="Guest Details" id="2GK-MC-AQ5">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward" catalog="system" id="4co-rZ-uWU"/>
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="Nps-tJ-WGT"/>
+                        <rightBarButtonItems>
+                            <barButtonItem title="  Save   " id="Nps-tJ-WGT"/>
+                            <barButtonItem title="Cancel" id="xtn-KH-E7P"/>
+                        </rightBarButtonItems>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="btnBack" destination="4co-rZ-uWU" id="pEK-fe-80U"/>
+                        <outlet property="btnCancel" destination="xtn-KH-E7P" id="Bhv-Dm-V80"/>
+                        <outlet property="btnSave" destination="Nps-tJ-WGT" id="cJc-he-fy4"/>
+                        <outlet property="txtName" destination="VvY-gY-JVM" id="446-aG-xdc"/>
+                        <outlet property="txtNotes" destination="Vdz-Q9-FSB" id="o3w-Wh-LZy"/>
+                        <outlet property="txtPhone" destination="ZFU-jH-aQJ" id="qUk-Em-ZsI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KHk-6F-REH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -365,7 +427,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nWV-WQ-e6b"/>
+                        <segue destination="r9d-Ke-Kw2" kind="relationship" relationship="rootViewController" id="AUM-ge-rY0"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sie-ku-AWO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -375,6 +437,7 @@
     </scenes>
     <resources>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

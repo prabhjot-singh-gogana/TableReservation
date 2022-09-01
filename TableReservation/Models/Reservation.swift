@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+struct Reservation {
+    var guest: Guest?
+    var table: Table?
+    var notes: String = ""
+    init(with guest: Guest, table: Table, notes: String = "") {
+        self.guest = guest
+        self.table = table
+        self.notes = notes
+    }
+}
+

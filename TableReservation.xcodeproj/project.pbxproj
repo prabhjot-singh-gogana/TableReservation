@@ -21,7 +21,25 @@
 		EE7DF33728BE4E3900A524BD /* GuestDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7DF33628BE4E3900A524BD /* GuestDetailsVC.swift */; };
 		EE7DF33928BE4E5400A524BD /* ReservationDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7DF33828BE4E5400A524BD /* ReservationDetailsVC.swift */; };
 		EE7DF33B28BE4E7B00A524BD /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7DF33A28BE4E7B00A524BD /* Reservation.swift */; };
-		EE7DF33D28BE4E9500A524BD /* ReservationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7DF33C28BE4E9500A524BD /* ReservationViewModel.swift */; };
+		EE7DF33D28BE4E9500A524BD /* ReservationDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7DF33C28BE4E9500A524BD /* ReservationDetailsViewModel.swift */; };
+		EEBD67FC28BEF97B00ECAF4D /* TimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBD67FB28BEF97B00ECAF4D /* TimeCell.swift */; };
+		EEBD67FE28BEF9B600ECAF4D /* PartySizeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBD67FD28BEF9B600ECAF4D /* PartySizeCell.swift */; };
+		EEBD680028BEFDAF00ECAF4D /* ReservationListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBD67FF28BEFDAF00ECAF4D /* ReservationListCell.swift */; };
+		EEBD680228BF1B6B00ECAF4D /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBD680128BF1B6B00ECAF4D /* Date+Extension.swift */; };
+		EEBD680528BF4EC000ECAF4D /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = EEBD680428BF4EC000ECAF4D /* RxCocoa */; };
+		EEBD680728BF4EC000ECAF4D /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = EEBD680628BF4EC000ECAF4D /* RxRelay */; };
+		EEBD680928BF4EC000ECAF4D /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EEBD680828BF4EC000ECAF4D /* RxSwift */; };
+		EEBD680B28BF526500ECAF4D /* SelectTimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBD680A28BF526500ECAF4D /* SelectTimeViewModel.swift */; };
+		EEBD680D28BF646200ECAF4D /* SelectPartySizeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBD680C28BF646200ECAF4D /* SelectPartySizeViewModel.swift */; };
+		EEBD680F28BF69F300ECAF4D /* TimeAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBD680E28BF69F300ECAF4D /* TimeAvailability.swift */; };
+		EEBD681128BF6A2B00ECAF4D /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBD681028BF6A2B00ECAF4D /* Table.swift */; };
+		EEBD681328BF6A5100ECAF4D /* Guest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBD681228BF6A5100ECAF4D /* Guest.swift */; };
+		EEBD681528BF736400ECAF4D /* GuestDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBD681428BF736400ECAF4D /* GuestDetailViewModel.swift */; };
+		EEBD681B28BF779300ECAF4D /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBD681A28BF779300ECAF4D /* String+Extension.swift */; };
+		EEBD681D28BF783F00ECAF4D /* PSFieldable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBD681C28BF783F00ECAF4D /* PSFieldable.swift */; };
+		EEBD681F28BF826900ECAF4D /* RxExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBD681E28BF826900ECAF4D /* RxExtension.swift */; };
+		EEBD682128BF896C00ECAF4D /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBD682028BF896C00ECAF4D /* UIViewController+Extension.swift */; };
+		EEBD682328BFA1BC00ECAF4D /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBD682228BFA1BC00ECAF4D /* LocalStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +78,22 @@
 		EE7DF33628BE4E3900A524BD /* GuestDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestDetailsVC.swift; sourceTree = "<group>"; };
 		EE7DF33828BE4E5400A524BD /* ReservationDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationDetailsVC.swift; sourceTree = "<group>"; };
 		EE7DF33A28BE4E7B00A524BD /* Reservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reservation.swift; sourceTree = "<group>"; };
-		EE7DF33C28BE4E9500A524BD /* ReservationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationViewModel.swift; sourceTree = "<group>"; };
+		EE7DF33C28BE4E9500A524BD /* ReservationDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationDetailsViewModel.swift; sourceTree = "<group>"; };
+		EEBD67FB28BEF97B00ECAF4D /* TimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCell.swift; sourceTree = "<group>"; };
+		EEBD67FD28BEF9B600ECAF4D /* PartySizeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartySizeCell.swift; sourceTree = "<group>"; };
+		EEBD67FF28BEFDAF00ECAF4D /* ReservationListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationListCell.swift; sourceTree = "<group>"; };
+		EEBD680128BF1B6B00ECAF4D /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		EEBD680A28BF526500ECAF4D /* SelectTimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTimeViewModel.swift; sourceTree = "<group>"; };
+		EEBD680C28BF646200ECAF4D /* SelectPartySizeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPartySizeViewModel.swift; sourceTree = "<group>"; };
+		EEBD680E28BF69F300ECAF4D /* TimeAvailability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeAvailability.swift; sourceTree = "<group>"; };
+		EEBD681028BF6A2B00ECAF4D /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
+		EEBD681228BF6A5100ECAF4D /* Guest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guest.swift; sourceTree = "<group>"; };
+		EEBD681428BF736400ECAF4D /* GuestDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestDetailViewModel.swift; sourceTree = "<group>"; };
+		EEBD681A28BF779300ECAF4D /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		EEBD681C28BF783F00ECAF4D /* PSFieldable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSFieldable.swift; sourceTree = "<group>"; };
+		EEBD681E28BF826900ECAF4D /* RxExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxExtension.swift; sourceTree = "<group>"; };
+		EEBD682028BF896C00ECAF4D /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		EEBD682228BFA1BC00ECAF4D /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +101,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEBD680928BF4EC000ECAF4D /* RxSwift in Frameworks */,
+				EEBD680728BF4EC000ECAF4D /* RxRelay in Frameworks */,
+				EEBD680528BF4EC000ECAF4D /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +178,9 @@
 			isa = PBXGroup;
 			children = (
 				EE7DF33A28BE4E7B00A524BD /* Reservation.swift */,
+				EEBD680E28BF69F300ECAF4D /* TimeAvailability.swift */,
+				EEBD681028BF6A2B00ECAF4D /* Table.swift */,
+				EEBD681228BF6A5100ECAF4D /* Guest.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -149,7 +188,10 @@
 		EE7DF32B28BE4C8100A524BD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				EE7DF33C28BE4E9500A524BD /* ReservationViewModel.swift */,
+				EE7DF33C28BE4E9500A524BD /* ReservationDetailsViewModel.swift */,
+				EEBD680A28BF526500ECAF4D /* SelectTimeViewModel.swift */,
+				EEBD680C28BF646200ECAF4D /* SelectPartySizeViewModel.swift */,
+				EEBD681428BF736400ECAF4D /* GuestDetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -162,6 +204,7 @@
 				EE7DF33428BE4E2000A524BD /* SelectPartySizeVC.swift */,
 				EE7DF33628BE4E3900A524BD /* GuestDetailsVC.swift */,
 				EE7DF33828BE4E5400A524BD /* ReservationDetailsVC.swift */,
+				EEBD67F928BEF91400ECAF4D /* OtherViewComponents */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -198,6 +241,8 @@
 		EE7DF33028BE4D6200A524BD /* ReusableComponents */ = {
 			isa = PBXGroup;
 			children = (
+				EEBD681C28BF783F00ECAF4D /* PSFieldable.swift */,
+				EEBD682228BFA1BC00ECAF4D /* LocalStorage.swift */,
 			);
 			path = ReusableComponents;
 			sourceTree = "<group>";
@@ -205,8 +250,30 @@
 		EE7DF33128BE4D7600A524BD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				EEBD680128BF1B6B00ECAF4D /* Date+Extension.swift */,
+				EEBD681A28BF779300ECAF4D /* String+Extension.swift */,
+				EEBD681E28BF826900ECAF4D /* RxExtension.swift */,
+				EEBD682028BF896C00ECAF4D /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EEBD67F928BEF91400ECAF4D /* OtherViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				EEBD67FA28BEF94400ECAF4D /* Cells */,
+			);
+			path = OtherViewComponents;
+			sourceTree = "<group>";
+		};
+		EEBD67FA28BEF94400ECAF4D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EEBD67FB28BEF97B00ECAF4D /* TimeCell.swift */,
+				EEBD67FD28BEF9B600ECAF4D /* PartySizeCell.swift */,
+				EEBD67FF28BEFDAF00ECAF4D /* ReservationListCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +292,11 @@
 			dependencies = (
 			);
 			name = TableReservation;
+			packageProductDependencies = (
+				EEBD680428BF4EC000ECAF4D /* RxCocoa */,
+				EEBD680628BF4EC000ECAF4D /* RxRelay */,
+				EEBD680828BF4EC000ECAF4D /* RxSwift */,
+			);
 			productName = TableReservation;
 			productReference = EE7DF2F528BE36E600A524BD /* TableReservation.app */;
 			productType = "com.apple.product-type.application";
@@ -297,6 +369,9 @@
 				Base,
 			);
 			mainGroup = EE7DF2EC28BE36E600A524BD;
+			packageReferences = (
+				EEBD680328BF4EC000ECAF4D /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = EE7DF2F628BE36E600A524BD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -340,13 +415,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE7DF33D28BE4E9500A524BD /* ReservationViewModel.swift in Sources */,
+				EEBD681B28BF779300ECAF4D /* String+Extension.swift in Sources */,
+				EE7DF33D28BE4E9500A524BD /* ReservationDetailsViewModel.swift in Sources */,
 				EE7DF33528BE4E2000A524BD /* SelectPartySizeVC.swift in Sources */,
+				EEBD681328BF6A5100ECAF4D /* Guest.swift in Sources */,
+				EEBD680228BF1B6B00ECAF4D /* Date+Extension.swift in Sources */,
+				EEBD680028BEFDAF00ECAF4D /* ReservationListCell.swift in Sources */,
+				EEBD681528BF736400ECAF4D /* GuestDetailViewModel.swift in Sources */,
 				EE7DF2FD28BE36E600A524BD /* ReservationListVC.swift in Sources */,
+				EEBD682328BFA1BC00ECAF4D /* LocalStorage.swift in Sources */,
 				EE7DF33728BE4E3900A524BD /* GuestDetailsVC.swift in Sources */,
+				EEBD681D28BF783F00ECAF4D /* PSFieldable.swift in Sources */,
+				EEBD682128BF896C00ECAF4D /* UIViewController+Extension.swift in Sources */,
 				EE7DF33928BE4E5400A524BD /* ReservationDetailsVC.swift in Sources */,
 				EE7DF33328BE4DFD00A524BD /* SelectTimeVC.swift in Sources */,
+				EEBD67FC28BEF97B00ECAF4D /* TimeCell.swift in Sources */,
+				EEBD680B28BF526500ECAF4D /* SelectTimeViewModel.swift in Sources */,
+				EEBD680D28BF646200ECAF4D /* SelectPartySizeViewModel.swift in Sources */,
+				EEBD680F28BF69F300ECAF4D /* TimeAvailability.swift in Sources */,
+				EEBD681128BF6A2B00ECAF4D /* Table.swift in Sources */,
 				EE7DF2F928BE36E600A524BD /* AppDelegate.swift in Sources */,
+				EEBD67FE28BEF9B600ECAF4D /* PartySizeCell.swift in Sources */,
+				EEBD681F28BF826900ECAF4D /* RxExtension.swift in Sources */,
 				EE7DF33B28BE4E7B00A524BD /* Reservation.swift in Sources */,
 				EE7DF2FB28BE36E600A524BD /* SceneDelegate.swift in Sources */,
 			);
@@ -684,6 +774,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EEBD680328BF4EC000ECAF4D /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EEBD680428BF4EC000ECAF4D /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EEBD680328BF4EC000ECAF4D /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		EEBD680628BF4EC000ECAF4D /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EEBD680328BF4EC000ECAF4D /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		EEBD680828BF4EC000ECAF4D /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EEBD680328BF4EC000ECAF4D /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EE7DF2ED28BE36E600A524BD /* Project object */;
 }
