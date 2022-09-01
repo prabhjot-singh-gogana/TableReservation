@@ -25,6 +25,7 @@ class TableReservationTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
+//    In this test case check the dates or times returning from start date to endDate with 15 minutes interval
     func test15MinDateInterval() throws {
         let dates = Date.datesIn15minsInterval(startDate: threePMDate, endDate: sixPMDate)
         let times = dates.map({$0.localTime})
